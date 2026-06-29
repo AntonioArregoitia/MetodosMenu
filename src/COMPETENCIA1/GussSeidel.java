@@ -46,6 +46,8 @@ public class GussSeidel extends GAUSSS {
     public void consola() {
 
         Scanner sc = new Scanner(System.in);
+        
+        System.out.println("\n------- GAUSS SEIDEL -------");
 
         int n = leerEntero(sc, "tamano del sistema: ");
 
@@ -155,12 +157,6 @@ public class GussSeidel extends GAUSSS {
 
         if (n >= 1) {
             System.out.println("X = " + X[0]);
-            
-            System.out.println(X[0]);
-            System.out.println( X[0]);
-            System.out.println( X[0]);
-            System.out.println(X[0]);
-
         }
         if (n >= 2) {
             System.out.println("Y = " + X[1]);

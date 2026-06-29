@@ -11,7 +11,7 @@ package COMPETENCIA1;
  */
 public class MAIN {
         public static void main(String[] args) {
-        MgussSeidel HOLA = new MgussSeidel();
+        GussSeidel HOLA = new GussSeidel();
         HOLA.consola();
     }
 }
