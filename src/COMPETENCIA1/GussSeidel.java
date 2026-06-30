@@ -42,7 +42,15 @@ public class GussSeidel extends GAUSSS {
             }
         }
     }
+public double truncar(double numero, int decimales) {
+    double factor = Math.pow(10, decimales);
 
+    if (numero >= 0) {
+        return Math.floor(numero * factor) / factor;
+    } else {
+        return Math.ceil(numero * factor) / factor;
+    }
+}
     public void consola() {
 
         Scanner sc = new Scanner(System.in);
@@ -154,16 +162,15 @@ public class GussSeidel extends GAUSSS {
         System.out.println("\n---------------------------");
         System.out.println("\n----- RESULTADO FINAL -----");
         System.out.println("\n---------------------------");
-
-        if (n >= 1) {
-            System.out.println("X = " + X[0]);
-        }
-        if (n >= 2) {
-            System.out.println("Y = " + X[1]);
-        }
-        if (n >= 3) {
-            System.out.println("Z = " + X[2]);
-        }
+if (n >= 1) {
+    System.out.println("X = " + truncar(X[0], 6));
+}
+if (n >= 2) {
+    System.out.println("Y = " + truncar(X[1], 6));
+}
+if (n >= 3) {
+    System.out.println("Z = " + truncar(X[2], 6));
+}
     }
 }
 
